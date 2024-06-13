@@ -1,0 +1,94 @@
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+body{
+    overflow: hidden;
+    background-color: rgb(240, 235, 235);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+span{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(17, 17, 17);
+}
+
+span h1{
+    margin-left: 2%;
+}
+
+span h6{
+    margin-left: 2%;
+}
+
+.container{
+    height: 550px;
+    width: 750px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.content{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content h4{
+    color: rgb(17, 17, 17);
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+}
+
+.content p{
+    color: rgb(131, 127, 127);
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+}
+
+.content img{
+    width: auto;
+    height: 400px;
+}
+
+.form_login{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+    transition: 0.3s ease;
+}
+
+.form_register{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+    transition: 0.3s ease;
+}

@@ -1,0 +1,70 @@
+<div class="change_between_login_creat">
+    <div class="btn_changes" [ngStyle]="{'--before-left': beforeLeft + '%'}">
+        <button class="enter" (click)="change_left()">ENTRAR</button>
+        <button class="register" (click)="change_rigth()">CADASTRAR</button>
+    </div>
+    <div class="choose">
+        <form class="form_login" [style.margin-left]="FormLeft" (ngSubmit)="submitLogin()" [formGroup]="loginForm">
+            <div class="other_method">
+                <button id="google">Fazer login com Google<i class="fab fa-google"></i></button>
+                <button id="apple">Fazer login com Apple<i class="fab fa-apple"></i></button>
+            </div>
+            <div class="valid" [ngClass]=" loginForm.get('email')?.invalid && loginForm.get('email')?.touched ? 'invalid' : 'valid' ">
+                <label for="email" >Seu e-mail:</label>
+                <input type="email" placeholder="E-mail" formControlName="email">
+                <div *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched" class="alert">
+                    <p>O e-mail é inválido.</p>
+                </div>  
+            </div>
+            <div class="valid" [ngClass]=" loginForm.get('password')?.invalid && loginForm.get('password')?.touched ? 'invalid' : 'valid' ">
+                <label for="password">Sua senha:</label>
+                <input type="password" placeholder="Senha" formControlName="password">
+                <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched" class="alert">
+                    <p>A senha deve ter pelo menos 8 caracteres.</p>
+                </div>  
+            </div>
+            <div class="enter_recover_terms">
+                <button type="submit" id="submit" [disabled]="!loginForm.valid" [ngStyle]="{'background-color': loginForm.valid ? 'rgb(8, 8, 8)' : 'rgb(8, 8, 8, 0.150)'}" [routerLink]="['/dashboard']">ENTRAR</button>
+                <button class="border_botton" (click)="alternarDivs()" routerLink="/recoverpassword">Esqueceu sua senha?</button>
+            </div>
+            <div class="terms">
+                <p>Ao continuar, estou de acordo com os <a href="">Termos de Uso</a> e <a href="">Aviso de Privacidade</a> do FinWise.</p>
+                <p>This site is protected by reCAPTCHA and the Google <a href="">Privacy Police</a> and <a href="">Terms of Service</a> apply.</p>
+            </div>
+        </form>
+        <form class="form_register" [formGroup]="registerForm" (ngSubmit)="submitRegister()">
+            <div class="valid" [ngClass]=" registerForm.get('name')?.invalid && registerForm.get('name')?.touched ? 'invalid' : 'valid' ">
+                <label for="name">Seu nome:</label>
+                <input type="text" id="name" placeholder="Nome" formControlName="name">
+                <div *ngIf="registerForm.get('name')?.invalid && registerForm.get('name')?.touched" class="alert">
+                    <p>O nome é obrigatório.</p>
+                </div>               
+            </div>
+            <div class="valid" [ngClass]=" registerForm.get('email')?.invalid && registerForm.get('email')?.touched ? 'invalid' : 'valid' ">
+                <label for="email">Seu e-mail:</label>
+                <input type="email" id="email" placeholder="E-mail" formControlName="email">
+                <div *ngIf="registerForm.get('email')?.invalid && registerForm.get('email')?.touched" class="alert">
+                    <p>O e-mail é obrigatório e deve ser válido.</p>
+                </div>                
+            </div>
+            <div class="valid" [ngClass]=" registerForm.get('password')?.invalid && registerForm.get('password')?.touched ? 'invalid' : 'valid' ">
+                <label for="password">Sua senha:</label>
+                <input type="password" id="password" placeholder="Senha" formControlName="password">
+                <div *ngIf="registerForm.get('password')?.invalid && registerForm.get('password')?.touched" class="alert">
+                    <p>A senha é obrigatória e deve ter pelo menos 8 caracteres.</p>
+                </div>                
+            </div>
+            <div class="enter_recover_terms2">
+                <button type="submit" id="register_button" [disabled]="!registerForm.valid" [ngStyle]="{'background-color': registerForm.valid ? 'rgb(8, 8, 8)' : 'rgb(8, 8, 8, 0.150)'}">ACEITAR E CADASTRAR</button>
+                <div class="flex">
+                    <input id="keepLoggedIn" type="checkbox" formControlName="keepLoggedIn">
+                    <label for="keepLoggedIn">Mantenha-me conectado</label>              
+                </div>
+            </div>
+            <div class="terms">
+                <p>Ao continuar, estou de acordo com os <a href="">Termos de Uso</a> e <a href="">Aviso de Privacidade</a> do FinWise.</p>
+                <p>This site is protected by reCAPTCHA and the Google <a href="">Privacy Policy</a> and <a href="">Terms of Service</a> apply.</p>
+            </div>
+        </form>        
+    </div>
+</div>

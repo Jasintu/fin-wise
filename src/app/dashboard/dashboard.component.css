@@ -1,0 +1,124 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.side-bar-closed{
+    height: 100vh;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.side-bar{
+    overflow: hidden;
+    height: 100vh;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-home{
+    height: 70px;
+    width: 70px;
+}
+
+.add{
+    height: 60px;
+    width: 60px;
+    background-color: rgb(19, 17, 17);
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.content-side-bar{
+    padding-top: 10px;
+    align-items: start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none; 
+    margin-left: 150px;
+    color: rgba(0, 0, 0, 0.356);
+}
+
+.icon-add{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none; 
+    width: 100px;
+}
+
+.options{
+    align-items: start;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none; 
+    width: 250px;
+    height: 100vh;
+}
+
+.icon-mat{
+    height: 60px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+}
+
+.settings{
+}
+
+.content-outlet{
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll; 
+}
+
+.side-bar li.bordered {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(19, 17, 17);
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+li{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+}
+
+.icon-dashboard{
+    height: 70px;
+    width: 70px;
+}

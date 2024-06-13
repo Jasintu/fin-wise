@@ -1,0 +1,167 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.currency{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-currency{
+    box-shadow: 0px 2px 2px 1px rgba(61, 61, 61, 0.514);
+    height: 100%;
+    width: 25%;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35%;
+}
+
+.icon-currency{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(95, 178, 189);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.info{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info h3{
+    color: gray;
+    font-size: 14px;
+    margin: 0;
+}
+
+.info p{
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    height: 100px;
+}
+
+.head h2{
+    font-size: 30px;
+    width: 50%;
+    font-weight: 300;
+}
+
+.user-side{
+    height: 100%;
+    display: flex;
+    width: 50%;
+    justify-content: end;
+}
+
+.username{
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.user{
+    margin: 10px;
+    height: 50px;
+    width: 200px;
+    border-radius:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.profile-pic{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-expenses{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    gap: 40px;
+    padding-top: 50px;
+}
+
+.card-expensives{
+    width: 700px;
+    height: 280px;
+    border-radius: 30px;
+    box-shadow: 0px 2px 0px 0px rgba(105, 105, 105, 0.466);
+}
+
+.title-expensives{
+    font-size: 20px;
+    color: rgb(87, 85, 85);
+    height: 10%;
+    width: 100%;
+}
+
+.more{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+.content-expensives{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-expensives h2{
+    font-size: 15px;
+}
+
+.content-expensives h3{
+    font-size: 15px;
+    color: rgb(68, 65, 65);
+}
+
+.icon-mat{
+    scale: 2;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.image-footer{
+    width: auto;
+}

@@ -1,0 +1,281 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    height: 100px;
+}
+
+.head h2{
+    font-size: 30px;
+    width: 50%;
+    font-weight: 300;
+}
+
+.user-side{
+    height: 100%;
+    display: flex;
+    width: 50%;
+    justify-content: end;
+}
+
+.username{
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.user{
+    margin: 10px;
+    height: 50px;
+    width: 200px;
+    border-radius:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.profile-pic{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.content-rigth{
+    width: 30%;
+    height: 100%;
+    grid-area: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-left{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card-left{
+    display: flex;
+    width: 90%;
+    height: 100px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0px 2px 2px 1px rgba(61, 61, 61, 0.514);
+}
+
+.info-money{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.icon-dollar{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    padding-right: 20px;
+}
+
+.icon-dollar mat-icon{
+    height: 50px;
+    width: 50px;
+    background-color:  rgb(19, 17, 17);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.money{
+    font-size: 22px;
+}
+
+.add-card{
+    height: 200px;
+    width: 400px;
+    box-shadow: 0px 2px 2px 1px rgba(61, 61, 61, 0.514);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-expensives{
+    height: 200px;
+    width: 400px;
+    box-shadow: 0px 2px 2px 1px rgba(61, 61, 61, 0.514);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.add-card p{
+    font-size: 20px;
+}
+
+.add{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid rgb(19, 17, 17);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: rgb(19, 17, 17);
+}
+
+.info-name{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
+
+.money-now{
+    width: 100%;
+    height: 50%;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+.add-expenses{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.bank-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.bank-icon img{
+    width: 57px;
+}
+
+.flex{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    font-size: 16px;
+    width: 50%;
+    padding-left: 10px;
+}
+
+.current-balance{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    font-size: 16px;
+}
+
+.expected-balance{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    font-size: 16px;
+}
+
+.add-button{
+    background-color: transparent;
+    font-size: 15px;
+    margin-right: 20px;
+    cursor: pointer;
+    color: rgb(19, 17, 17);
+}
+
+.rigth-info{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-left: 20px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left-money{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-right: 20px;
+    flex-direction: column;
+    gap: 10px;
+    color: green;
+}
+
+.more{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.options{
+    margin-right: 10px;
+}

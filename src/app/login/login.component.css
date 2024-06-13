@@ -1,0 +1,410 @@
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+body{
+    background-color: rgb(240, 235, 235);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: 550px;
+    width: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content h4{
+    color: rgb(17, 17, 17);
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+}
+
+.content p{
+    color: rgb(131, 127, 127);
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+}
+
+.content img{
+    width: auto;
+    height: 400px;
+}
+
+.form_login{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+    gap: 10px;
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+.form_register{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    transition: 0.3s ease;
+    overflow: hidden;
+}
+
+.alert{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    color: rgb(209, 73, 73);
+    width: 350px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.change_between_login_creat{
+    height: 100%;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.btn_changes{
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+
+.btn_changes::before{
+    transition: 0.3s ease;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: var(--before-left, 0%);
+    right: 0;
+    width: 50%;
+    height: 100%;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.btn_changes button{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.enter{
+    width: 70%;
+    height: 100%;
+    background-color: transparent;
+    text-align: center;
+}
+
+.other_method{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.enter_recover_terms2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7px;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.enter_recover_terms{
+    margin-top: -7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.email, .name, .password{
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.enter_recover_terms{
+    gap: 15px;
+}
+
+.other_method{
+    gap: 10px;
+}
+
+.email label, .password label, .name label{
+    display: flex;
+    justify-content: start;
+    width: 350px;
+    color: black;
+    font-size: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.email input::placeholder, .password input::placeholder, .name input::placeholder{
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.email input, .password input, .name input{
+    transition: 0.3s ease;
+    width: 350px;
+    height: 40px;
+    position: relative;
+    border-bottom: 2px solid rgb(110, 110, 110);
+    background-color: transparent;
+}
+
+.email input:hover, .password input:hover, .name input:hover {
+    border-bottom: 2px solid black;
+}
+
+input:focus{
+    outline: none;
+}
+
+.other_method button{
+    cursor: pointer;
+    width: 350px;
+    height: 50px;
+    font-size: 15px;
+    position: relative;
+    border: 1px solid rgba(63, 63, 63, 0.555);
+    background-color: transparent;
+    border-radius: 5px
+}
+
+#apple{
+    background-color: rgb(8, 8, 8);
+    color: aliceblue;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#google{
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fab{
+    font-size: 25px;
+}
+
+#submit{
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    color: aliceblue;
+    transition: 0.2s ease;
+}
+
+#submit:hover{
+    background-color: #ffffff;
+    color: aliceblue;
+}
+
+#register_button{
+    width: 280px;
+    height: 50px;
+    background-color: black;
+    border-radius: 10px;
+    color: aliceblue;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#register_button:hover{
+    background-color: #14110c;
+    color: aliceblue;
+}
+
+.enter_recover_terms button{
+    cursor: pointer;
+}
+
+.border_botton{
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.border_botton:hover{
+    text-decoration: underline;
+}
+
+.terms{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    color: rgb(131, 127, 127);
+    gap: 13px;
+    width: 300px;
+}
+
+.terms a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.RecoverPass{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 400px;
+}
+
+.choose{
+    display: flex;
+    justify-content: start;
+    width: 350px;
+    height: 100%;
+    overflow: hidden;
+    gap: 70px;
+}
+
+.keep_conect{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.keep_conect input{
+    scale: 0.9;
+    cursor: pointer;
+}
+
+.valid{
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.invalid{
+    transition: 0.5s ease;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    color: rgb(209, 73, 73);
+}
+
+.valid label {
+    display: flex;
+    justify-content: start;
+    width: 350px;
+    color: black;
+    font-size: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.valid input::placeholder{
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.valid input{
+    transition: 0.3s ease;
+    width: 350px;
+    height: 40px;
+    position: relative;
+    border-bottom: 2px solid rgb(110, 110, 110);
+    background-color: transparent;
+}
+
+.valid input:hover {
+    border-bottom: 2px solid black;
+}
+
+.invalid label {
+    display: flex;
+    justify-content: start;
+    width: 350px;
+    color:  rgb(209, 73, 73);
+    font-size: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.invalid input::placeholder{
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:  rgb(209, 73, 73);
+}
+
+.invalid input{
+    transition: 0.3s ease;
+    width: 350px;
+    height: 40px;
+    position: relative;
+    border-bottom: 2px solid  rgb(209, 73, 73);
+    background-color: transparent;
+}
+
+.invalid input:hover {
+    border-bottom: 2px solid  rgb(209, 73, 73);
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}

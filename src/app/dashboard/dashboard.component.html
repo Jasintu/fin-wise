@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="side-bar">
+        <ul class="content-side-bar">
+            <ul class="options">
+                <div>
+                    <li routerLink="home" (click)="setActive('home')" [ngClass]="{'bordered': activeRoute === 'home'}">
+                        <mat-icon class="icon-mat">home</mat-icon>
+                    </li>
+                    <li routerLink="accounts" (click)="setActive('accounts')" [ngClass]="{'bordered': activeRoute === 'accounts'}">
+                        <mat-icon class="icon-mat">account_balance</mat-icon>
+                    </li>
+                    <li routerLink="cards" (click)="setActive('cards')" [ngClass]="{'bordered': activeRoute === 'cards'}">
+                        <mat-icon class="icon-mat">credit_card</mat-icon>
+                    </li>
+                    <li routerLink="config" (click)="setActive('plan')" [ngClass]="{'bordered': activeRoute === 'plan'}">
+                        <mat-icon class="icon-mat settings">flag</mat-icon>
+                    </li>
+                    <li (click)="setActive('transition')" [ngClass]="{'bordered': activeRoute === 'transition'}">
+                        <mat-icon class="icon-mat settings">sync_alt</mat-icon>
+                    </li>
+                    <li routerLink="config" (click)="setActive('history')" [ngClass]="{'bordered': activeRoute === 'history'}">
+                        <mat-icon class="icon-mat settings">history</mat-icon>
+                    </li>
+                </div>
+                <div>
+                    <li>
+                        <mat-icon class="icon-mat">remove</mat-icon>
+                    </li>
+                    <li routerLink="config" (click)="setActive('notifications')" [ngClass]="{'bordered': activeRoute === 'notifications'}">
+                        <mat-icon class="icon-mat settings">notifications</mat-icon>
+                    </li>
+                    <li routerLink="config" (click)="setActive('config')" [ngClass]="{'bordered': activeRoute === 'config'}">
+                        <mat-icon class="icon-mat settings">settings</mat-icon>
+                    </li>
+                    <div class="icon-add">
+                        <li class="add">
+                            H
+                        </li>
+                    </div>
+                </div>
+            </ul>
+        </ul>
+    </div>
+    <div class="content-outlet">
+        <router-outlet></router-outlet>
+    </div>
+</div>
